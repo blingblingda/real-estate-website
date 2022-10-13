@@ -1,11 +1,15 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import SearchType from "./Search/SearchType";
 
-const App =()=>{
+const App = () => {
   return (
-    <div className="test">
-      <p>Hello World</p>
-    </div>
-  )
-}
+    <BrowserRouter>
+      <div className="test">
+        <SearchType />
+      </div>
+    </BrowserRouter>
+  );
+};
 
 export default App;
